@@ -16,8 +16,8 @@ st.set_page_config(
 # -----------------------#
 @st.cache_resource
 def load_components():
-    model = joblib.load("expense_model.pkl")
-    tfidf = joblib.load("tfidf_vectorizer.pkl")
+    model = joblib.load("expense_model_v2.pkl")
+    tfidf = joblib.load("tfidf_vectorizer_v2.pkl")
     return model, tfidf
 
 model, tfidf = load_components()
